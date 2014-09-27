@@ -34,13 +34,12 @@
             <span class="title-bg">Intro to HTML & CSS</span><br>
             <span class="title-bg">Building a Multi-page website</span>
             </h1>
-            <h2><span>with</span> Instructor Name</h2>
+            <h2><span>with</span> Amanda Tkaczyk</h2>
 
-            <img class="instructor-img" src="framework/img/profile-generic.jpg" alt="instructor name">
+            <img class="instructor-img" src="framework/img/photo.jpeg" alt="instructor name">
             <ul>
-            <li><i class="fa fa-envelope"></i><a href="mailto:">hello@email.com</li>
-            <li><i class="fa fa-desktop"></i><a href="#" target="_blank">mywebsite.com</a></li>
-            <li><i class="fa fa-twitter"></i><a href="http://twitter.com/" target="_blank">@twitter_name</a></li>
+            <li><i class="fa fa-envelope"></i><a href="mailto:">amanda.tkacz@gmail.com</li>
+            <li><i class="fa fa-twitter"></i><a href="http://twitter.com/" target="_blank">@amanda_teekay</a></li>
             </ul>
         </div>
         <div class="presenter-notes">
@@ -73,10 +72,26 @@
 * Write the HTML for your project
 * Intro to CSS
 
-###Afternoon
+###LUNCH 
 
+###Afternoon
+* Meet Your Mentors
 * More CSS & HTML
 * Next steps
+        </section>
+
+        
+
+        <section class="slide" data-markdown>
+##Getting Started: Text editor
+
+You can write code using your computer's default text editor, Notepad (Windows) or TextEdit (Apple), but choosing a text editor with colour highlighting and other helpful features will improve your work flow.
+
+**[Sublime Text](http://www.sublimetext.com/)** is a great option and is the editor we'll be using today. 
+
+If you are unable to install Sublime Text, there are many free and paid [options](http://en.wikipedia.org/wiki/List_of_HTML_editors).  
+
+Try [Notepad++](http://notepad-plus-plus.org/) (Windows) or [Atom](https://atom.io/) (Mac).
         </section>
 
         <section class="slide" data-markdown>
@@ -93,18 +108,6 @@ You can view the source of any web page by right-clicking (or two-finger tap) on
 * keyboard shortcut: **Ctrl + Shift + I** (PC) / **Cmnd + Option + I** (Mac)
 
 Extra resource: http://discover-devtools.codeschool.com
-        </section>
-
-        <section class="slide" data-markdown>
-##Getting Started: Text editor
-
-You can write code using your computer's default text editor, Notepad (Windows) or TextEdit (Apple), but choosing a text editor with colour highlighting and other helpful features will improve your work flow.
-
-**[Sublime Text](http://www.sublimetext.com/)** is a great option and is the editor we'll be using today. 
-
-If you are unable to install Sublime Text, there are many free and paid [options](http://en.wikipedia.org/wiki/List_of_HTML_editors).  
-
-Try [Notepad++](http://notepad-plus-plus.org/) (Windows) or [Atom](https://atom.io/) (Mac).
         </section>
 
         <section class="slide" data-markdown>
@@ -139,7 +142,7 @@ A website is basically a collection of web pages, aka **HTML documents**, that c
             <p><strong>JavaScript</strong> is a <em>programming</em> language used to define the behavior and add functionality to a website.</p>
 
             <div class="example">
-            <p onclick="alert('clicked!');">I'm a paragraph that can be clicked. Try it!</p>
+            <p onclick="alert('#HamOnt Rocks!');">I'm a paragraph that can be clicked. Try it!</p>
             </div>
         </section>
 
@@ -571,7 +574,7 @@ There are many different file types that can be used for the web. Each type is b
         <section class="slide" data-markdown>
 ##The alt attribute
 
-`alt` is an optional image **attribute** and refers to *alternative text*. Alt text is read by screen reading software used by visually impaired users.
+`alt` is <del>an optional</del> image **attribute** and refers to *alternative text*. Alt text is read by screen reading software used by visually impaired users.
 
 It also displays when there's a broken or missing image due to typos or moved files. It should be a short description of the image.
 
@@ -636,9 +639,7 @@ Just like images, there are many services available for placeholder text.
 * http://thewireipsum.com
 * http://slipsum.com/
 * and [many more](http://meettheipsums.com/)!
-
-For reference, [exercise3-about.html](project/examples/exercise3-about.html) can be found in the **examples** folder but look only if you're stuck!
-        </section>
+</section>
     
         <section class="slide title" data-markdown>
 #Intro to CSS
@@ -836,37 +837,6 @@ body {
             #CSS & TYPOGRAPHY
         </section>
 
-        <section class="slide" data-markdown>
-            ##Web safe fonts
-
-            Fonts can be changed with the `font-family` property. However, not all fonts are installed on all computers so it's recommended to use fonts that are considered *web safe* &mdash; fonts that are commonly included on most computers.
-
-            It's best practice to list at least two or three font options to provide a fall-back if the user doesn't have the preferred fonts installed.
-
-            ```
-            body {
-                font-family: Helvetica, Arial, sans-serif;
-            }
-            ```
-
-            Here's a handy resource for referencing web safe fonts: [CSS Font Stack](http://cssfontstack.com/).
-        </section>
-
-        <section class="slide" data-markdown>
-            ##Web fonts
-
-            For more options beyond web safe fonts, services like [Google Fonts](http://www.google.com/fonts/) make it easier to add variety. Google Fonts allows you to link directly to their *hosted* stylesheet and fonts and no file downloads are necessary. To use these fonts:
-
-            * Select the fonts you want to use and **Add to Collection**.  
-            * You can **Review** them to take a closer look, then choose **Use** when ready.
-            * Select font weights. The more you choose, the more it will slow down page load time.
-            * The default character set should contain what you need. Only select an option if you need to add additional language support.
-            * Grab the `&lt;link&gt;` code snippet and add it the `&lt;head&gt;` part of your page.
-            * Use the new fonts with the `font-family` property as listed in the example on the Google Fonts page.
-
-            That's it!
-        </section>
-
         <section class="slide">
             <h2>CSS Font Styles</h2>
             <p>Let's look at a few CSS properties for styling text together and change some values below and see what happens!</p>
@@ -927,6 +897,37 @@ text-transform: lowercase;</textarea>
 
             In the above example, the CSS properties in the body selector is inherited by the children and descendants so all the text would be blue and display the Helvetica font. However, when a more specific selector is used (`h1`), it overrides the inherited values because it's more *specific*.
         </section>
+
+                <section class="slide" data-markdown>
+            ##Web safe fonts
+
+            Fonts can be changed with the `font-family` property. However, not all fonts are installed on all computers so it's recommended to use fonts that are considered *web safe* &mdash; fonts that are commonly included on most computers.
+
+            It's best practice to list at least two or three font options to provide a fall-back if the user doesn't have the preferred fonts installed.
+
+            ```
+            body {
+                font-family: Helvetica, Arial, sans-serif;
+            }
+            ```
+
+            Here's a handy resource for referencing web safe fonts: [CSS Font Stack](http://cssfontstack.com/).
+        </section>
+
+        <section class="slide" data-markdown>
+            ##Web fonts
+
+            For more options beyond web safe fonts, services like [Google Fonts](http://www.google.com/fonts/) make it easier to add variety. Google Fonts allows you to link directly to their *hosted* stylesheet and fonts and no file downloads are necessary. To use these fonts:
+
+            * Select the fonts you want to use and **Add to Collection**.  
+            * You can **Review** them to take a closer look, then choose **Use** when ready.
+            * Select font weights. The more you choose, the more it will slow down page load time.
+            * The default character set should contain what you need. Only select an option if you need to add additional language support.
+            * Grab the `&lt;link&gt;` code snippet and add it the `&lt;head&gt;` part of your page.
+            * Use the new fonts with the `font-family` property as listed in the example on the Google Fonts page.
+
+            That's it!
+        </section>
         
         <section class="slide">
             <h2>Lunchtime exercise!</h2>
@@ -942,7 +943,13 @@ text-transform: lowercase;</textarea>
             <div class="presenter-notes">
                 <p>Aim to get to lunch around 12:30pm. A 45 min lunch is recommended since the afternoon covers a lot & more advanced concepts. Let the learners know this is optional but most people tend to enjoy continuing on a bit of exercises over the break. This will help speed up the next exercise and give them time to personalize their font choices without cutting into class time.</p>
             </div>
+
         </section>
+
+       <section class="slide title" data-markdown>
+            #Meet Your Mentors
+        </section>
+
         <section class="slide">
             <h2>Exercise #4 - Typography (20 MINS)</h2>
             <ol>
@@ -1018,6 +1025,17 @@ text-transform: lowercase;</textarea>
         </section>
 
         <section class="slide">
+            <h2>Box Model - Visualized</h2>
+
+            <p>This diagram represents how all these different properties work together to change the size of an element.</p>
+
+            <img src="framework/img/workshop/box-model.gif" alt="" title="">
+
+            <p>The original element started with a width and height of <strong>400 x 100</strong>. After including the padding, border &amp; margin, the <em>size</em> of the box is actually <strong>452 x 152</strong>! The margin takes up space but since it's <em>outside</em> of the element, it doesn't increase the size of the element itself.</p>
+        </section>
+
+
+        <section class="slide">
             <h2>Padding and Margin</h2>
 
             <p>The <code>padding</code> and <code>margin</code> can both be declared using similar syntax of 1 to 4 values. Values can be declared using different measurement units but pixels or percentages are most commonly used. Setting the value to "0" will <strong>remove</strong> any default space on an HTML element. Any positive value will <strong>add</strong> space.</p>
@@ -1082,17 +1100,7 @@ margin: 0;</textarea>
             border-top: 2px solid red;
             ```
         </section>
-
-        <section class="slide">
-            <h2>Box Model Review</h2>
-
-            <p>This diagram represents how all these different properties work together to change the size of an element.</p>
-
-            <img src="framework/img/workshop/box-model.gif" alt="" title="">
-
-            <p>The original element started with a width and height of <strong>400 x 100</strong>. After including the padding, border &amp; margin, the <em>size</em> of the box is actually <strong>452 x 152</strong>! The margin takes up space but since it's <em>outside</em> of the element, it doesn't increase the size of the element itself.</p>
-        </section>
-
+    
         <section class="slide" data-markdown>
             ##Box Model Fix!
 
